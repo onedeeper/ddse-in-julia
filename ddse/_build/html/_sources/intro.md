@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Welcome to Steve Brunton's Differential Equations (In Julia)
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This book is a container for the examples of [Steve Brunton's Differential Equations](https://www.youtube.com/playlist?list=PLMrJAkhIeNNTYaOnVI3QpH7jgULnAmvPA) course written in Julia.
 
-Check out the content pages bundled with this sample book to see more.
+You can find the full course materials [here](http://faculty.washington.edu/sbrunton/me564/) and Steve's book [here](http://databookuw.com). 
+
+This book follows the lecture structure from the course page.
 
 ```{tableofcontents}
 ```
