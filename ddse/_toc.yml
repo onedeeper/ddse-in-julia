@@ -4,5 +4,5 @@
 format: jb-book
 root: intro
 chapters:
-- file: notebooks/lecture_1
-- file: notebooks/lecture_2
+- file: notebooks/lecture_1_2
+- file: notebooks/lecture_2_3
