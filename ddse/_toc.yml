@@ -6,3 +6,4 @@ root: intro
 chapters:
 - file: notebooks/lecture_1_2
 - file: notebooks/lecture_2_3
+- file: notebooks/lecture_4
