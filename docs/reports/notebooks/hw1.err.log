@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "/Users/udeshhabaraduwa/anaconda3/envs/pyenv/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/udeshhabaraduwa/anaconda3/envs/pyenv/lib/python3.9/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/udeshhabaraduwa/anaconda3/envs/pyenv/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "/Users/udeshhabaraduwa/anaconda3/envs/pyenv/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/Users/udeshhabaraduwa/anaconda3/envs/pyenv/lib/python3.9/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/Users/udeshhabaraduwa/anaconda3/envs/pyenv/lib/python3.9/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/udeshhabaraduwa/anaconda3/envs/pyenv/lib/python3.9/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+@btime get_vals(lambdas, t_range,x_0);
+------------------
+
+
+UndefVarError: `get_vals` not defined
+
+Stacktrace:
+  [1] var"##core#230"()
+    @ Main ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:561
+  [2] var"##sample#231"(::Tuple{}, __params::BenchmarkTools.Parameters)
+    @ Main ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:570
+  [3] _lineartrial(b::BenchmarkTools.Benchmark, p::BenchmarkTools.Parameters; maxevals::Int64, kwargs::@Kwargs{})
+    @ BenchmarkTools ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:187
+  [4] _lineartrial(b::BenchmarkTools.Benchmark, p::BenchmarkTools.Parameters)
+    @ BenchmarkTools ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:182
+  [5] #invokelatest#2
+    @ ./essentials.jl:892 [inlined]
+  [6] invokelatest
+    @ ./essentials.jl:889 [inlined]
+  [7] #lineartrial#46
+    @ ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:51 [inlined]
+  [8] lineartrial
+    @ ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:50 [inlined]
+  [9] tune!(b::BenchmarkTools.Benchmark, p::BenchmarkTools.Parameters; progressid::Nothing, nleaves::Float64, ndone::Float64, verbose::Bool, pad::String, kwargs::@Kwargs{})
+    @ BenchmarkTools ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:300
+ [10] tune!
+    @ ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:289 [inlined]
+ [11] tune!(b::BenchmarkTools.Benchmark)
+    @ BenchmarkTools ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:289
+ [12] top-level scope
+    @ ~/.julia/packages/BenchmarkTools/QNsku/src/execution.jl:666
+

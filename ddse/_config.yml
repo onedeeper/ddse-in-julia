@@ -46,3 +46,6 @@ parse:
     # - tooltip
     - amsmath
     - dollarmath
+
+sphinx:
+  extra_css: ["custom.css"]
